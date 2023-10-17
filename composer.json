@@ -1,0 +1,23 @@
+{
+    "name": "dustin-scott/object-stream",
+    "type": "project",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpunit/phpunit": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ObjectStream\\": "sources/",
+            "Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dustin Scott",
+            "email": "edge.fang@gmail.com"
+        }
+    ],
+    "scripts": {
+        "phpcs": "phpcs --standard=phpcs.xml"
+    }
+}
