@@ -1,6 +1,8 @@
 {
     "name": "dustin-scott/object-stream",
+    "description": "An Object library for extensive php error handling, without sacrificing performance or control",
     "type": "project",
+    "license": "MIT",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.7",
         "phpunit/phpunit": "^10.4"
