@@ -13,9 +13,13 @@ class Json extends File
      * @throws DecodeJsonError
      * @throws ReadError
      */
-    final public function decode(): array
+    final public function decode(): ?array
     {
-        $rawData = $this->readAll();
+        $rawData = trim($this->readAll());
+        if(strlen($rawData) === 0) {
+            return null;
+        }
+
         $jsonData = json_decode($rawData, true);
         if ($jsonData === null) {
             throw new DecodeJsonError($this);
